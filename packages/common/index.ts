@@ -1,10 +1,10 @@
 
-import zod from "zod";
+import zod, { email } from "zod";
 
 export const UserSchema = zod.object({
     username: zod.string().max(20),
     password: zod.string(),
-    email:zod.string()
+    name: zod.string()
 })
 
 export const SigninSchema = zod.object({
